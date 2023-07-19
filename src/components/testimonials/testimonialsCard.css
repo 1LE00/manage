@@ -1,0 +1,43 @@
+.testimonial-card{
+    position: relative;
+    background-color: hsl(var(--clr-neutral-light-gray));
+    gap: 1rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 5px;
+    flex-shrink: 0;
+    opacity: 0;
+    transition: transform 0.5s ease-in, opacity 0.5s ease-out;
+}
+
+.avatar{
+    position: absolute;
+    border-radius: 50%;
+    top: -36px;
+    width: 72px;
+    aspect-ratio: 1;
+}
+
+.name{
+    margin-block-start: 1.5rem;
+}
+
+.review{
+    font-size: 0.825rem;
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+@media screen and (min-width: 768px){
+    .testimonial-card{
+        opacity: 1;
+        width: 550px;
+        padding: 2.91rem;
+        gap: 1.5rem;
+    }
+
+    .review{
+        font-size: var(--fs-400);
+        font-weight: 300;
+        line-height: 1.5;
+    }
+}

@@ -1,0 +1,60 @@
+.App {
+  overflow: hidden;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  justify-content: center;
+  transform: rotate(-90deg);
+  background-color: hsl(var(--clr-primary-red));
+  transition: opacity 0.5s ease-out, background-color 0.5s ease-out;
+}
+
+@media screen and (min-width: 440px) {
+  :root {
+    --padding-inline: 2rem;
+  }
+}
+
+@media screen and (min-width: 527px) {
+  :root {
+    --padding-inline: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --padding-inline: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .back-to-top:hover {
+    background-color: hsl(var(--clr-primary-red), 0.75);
+  }
+
+  .back-to-top svg path {
+    transition: stroke 0.5s ease-out;
+  }
+
+  .back-to-top:hover svg path {
+    stroke: hsl(var(--clr-black));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --padding-inline: 5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --padding-inline: 12rem;
+  }
+}
